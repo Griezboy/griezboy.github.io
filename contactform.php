@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <title>Sarah The Physiotherapist</title>
+ 
+</head>
+<body>
+  
+<nav>
+    <div class="logo-container">
+    <h4 class="logo">Sarah The Physiotherapist</h4>
+  </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bookonline.html">Book Online</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div> 
+</nav>
+    <br>
+    <br>
+    <section class="csection4">
+        <div class="contactus">
+            <h1>CONTACT US</h1>
+            <br>
+            <p>sarahodongo5@gmail.com</p>
+            <br>
+            <p>+254 722 758 907</p>
+            <div class="middle">
+                <a class="sbtn" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="sbtn" href="https://www.instagram.com/ant1griezboy/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <br>
+            <form action="contact.php" class="contact-form" method="POST">
+                <input name="name" type="text" class="cf-text" placeholder="Name" required>
+                <input name="email" type="text" class="cf-text" placeholder="E-mail Address" required>
+                <input name="subject" type="text" class="cf-text" placeholder="Subject">
+                <textarea name="message" class="cf-text" placeholder="Type your message..." required></textarea>
+                <input name="submit" type="submit" class="cf-btn" value="SUBMIT">
+            </form>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer">©2021 by SarahthePhysiotherapist. All rights reserved</div>
+    <br>
+    <br>
+    </body>
+</html>
