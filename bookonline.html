@@ -16,7 +16,13 @@
 <body>
   
     <nav>
-        <img class="burger" src="img/burger.png" alt="burger" onclick="togglemenu()">
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    
         <div class="logo-container">
         <h4 class="logo">Sarah The Physiotherapist</h4>
       </div>
@@ -28,27 +34,20 @@
         </ul>
         
     </nav>
-    
+        
     <div class="sorry">We're sorry, this service is not available at the moment. Please go to Contact to book your Appointment.</div>
     <br><br><br><br><br><br><br><br><br><br>
     <footer class="footer">©2021 by SarahthePhysiotherapist. All rights reserved</footer> 
+
     <script>
-
-        var menuList = document.getElementById("menuList");
-
-        menuList.style.maxHeight = "0px";
-
-        function togglemenu(){
-
-            if(menuList.style.maxHeight == "0%"){
-                menuList.style.maxHeight = "80%"
-            }
-            else {
-                menuList.style.maxHeight = "0%"
-            }
-        }
-
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelector(".nav-links li");
+   
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle("open");
+        });
     </script>
- 
+   
 </body>
 </html>
