@@ -138,21 +138,25 @@ nav {
         right: 5%;
         top: 20%;
         transform: translate(-5%,-50%);
+        z-index: 2;
     }
     .nav-links {
         position: fixed;
         background: #2A7C6F;
-        height: 100vh;
+        height: 75vh;
+        opacity: 80%;
+        top: 20vh;
         width: 100%;
         flex-direction: column;
-        clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
+        clip-path: circle(100px at 90% -25%);
+        -webkit-clip-path: circle(100px at 90% -25%);
         transition: 1s all ease-out;
+        pointer-events: none;
     }
     .nav-links.open {
-        clip-path: circle(900px at 90% -10%);
-        -webkit-clip-path: circle(900px at 90% -10%);
-
+        clip-path: circle(900px at 90% -25%);
+        -webkit-clip-path: circle(900px at 90% -25%);
+        pointer-events: all;
     }
     
     .nav-links li {
@@ -164,6 +168,7 @@ nav {
     .nav-links li a {
         color: #ffff;
     }
+
     .cover {
        box-sizing: border-box;
        object-position: center;
@@ -193,13 +198,11 @@ nav {
 }
 
 .introduction {
-    flex: 1;
+    fl£ex: 1;
 }
 
 .inro {
     margin-top: 90px;
-}
-.intro-text {
     background-color: #EEFAF7;
     color: #2A7C6F;
     padding: 70px 0px 12px 40px;
@@ -207,6 +210,10 @@ nav {
     width: 90%;
     margin-left: 50px;
     align-items: center;
+
+}
+.intro-text {
+
 }
 .intro-text h1{
     font-size: 44px;
@@ -216,10 +223,6 @@ nav {
     margin-left: -15px;
     position: relative;
     padding: 80px 40px 12px 0px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
 }
 
 .specialized {
@@ -282,6 +285,7 @@ nav {
 
 @media screen and (max-width:500px) {
     .presentation {
+        height: 50%;
     }
 
     .introduction {
@@ -290,27 +294,40 @@ nav {
     }
     .intro {
         margin: 15px;
-    }
-    .cover {
-        display: none;
-    }
-
-    .intro-text {
+        background: url(./img/myofascial.webp);
+        background-size: cover;
+        height: 60vh;
         font-size: larger;
-        backdground: #408b7f;
         margin: 10px;
         width: 100%;
         padding: 10px;
         margin-top: 0;
 
     }
+    .cover {
+        display: none;
+    }
+
+    .intro-text {
+        background: inherit;
+        width: 70%;
+        height: 35%;
+        border-radius: 5px;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .intro-text h1 {
         font-size: x-large;
         margin: 5px;
+        padding: 10px;
     }
     .intro-text h2 {
         font-size: 90%;
         font-weight: 500;
+        padding: 10px;
     }
 
     .specialized {
@@ -392,7 +409,7 @@ nav {
 }
 .gallery-item .image {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 4px;
     height: 100%;
     overflow: hidden;
 }
