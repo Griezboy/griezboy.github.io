@@ -16,7 +16,13 @@
 <body>
   
     <nav>
-        <img class="burger" src="img/burger.png" alt="burger" onclick="togglemenu()">
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    
         <div class="logo-container">
         <h4 class="logo">Sarah The Physiotherapist</h4>
       </div>
@@ -28,7 +34,7 @@
         </ul>
         
     </nav>
-        
+            
     <section class="servsec">
         <p class="specialized">SPECIALIZED PHYSIOTHERAPIST IN...</p>
         <br>
@@ -59,7 +65,7 @@
         </div>
     </div>
     <div class="button">
-    <button class="b1">Book Now!</button>
+    <a href="bookonline.html"><button class="b1">Book Now!</button></a>
     <button class="b2">Call!</button>
 </div>
 </section>
@@ -86,10 +92,10 @@
             <br>
             <p>+254 722 758 907</p>
             <div class="middle">
-                <a class="sbtn" href="#">
+                <a class="sbtn" href="https://web.facebook.com/sarah.odongo.5">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a class="sbtn" href="https://www.instagram.com/ant1griezboy/">
+                <a class="sbtn" href="https://www.instagram.com/sarahthemanualtherapist/">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
@@ -107,22 +113,14 @@
     <footer class="footer">©2021 by SarahthePhysiotherapist. All rights reserved</footer>  
     <br><br>
     <script>
-
-        var menuList = document.getElementById("menuList");
-
-        menuList.style.maxHeight = "0px";
-
-        function togglemenu(){
-
-            if(menuList.style.maxHeight == "0%"){
-                menuList.style.maxHeight = "80%"
-            }
-            else {
-                menuList.style.maxHeight = "0%"
-            }
-        }
-
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelector(".nav-links li");
+   
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle("open");
+        });
     </script>
-
+   
 </body>
 </html>
