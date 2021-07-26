@@ -402,6 +402,17 @@ nav {
     grid-gap: 10px;
 
 }
+.far {
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transition: 0.6s;
+}
+.gallery-item:hover .far{
+    opacity: 1;
+}
 
 .gallery-item {
     width: 100%;
@@ -700,5 +711,504 @@ textarea.cf-text {
     .intro-text {
         font-size: larger;
     }
+
+}
+
+@media screen and (max-width:770px) {
+    .presentation {
+        height: 50%;
+    }
+
+    .introduction {
+        margin: auto;
+        padding: unset;
+    }
+    .intro {
+        margin: 15px;
+        background-image: url(https://static.wixstatic.com/media/d03b04_0977842a150046088ab639869469a0ac~mv2.jpg);
+        background-size: cover;
+        height: 60vh;
+        font-size: larger;
+        margin: 10px;
+        width: 100%;
+        padding: 10px;
+        margin-top: 0;
+
+    }
+    .cover {
+        display: none;
+    }
+
+    .intro-text {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        width: 70%;
+        height: 45%;
+        border-radius: 5px;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .intro-text h1 {
+        font-size: x-large;
+        margin: 5px;
+        padding: 10px;
+    }
+    .intro-text h2 {
+        font-size: 90%;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    .specialized {
+        font-size: x-large;
+        text-align: center;
+        font-weight: 500;
+    }
+    .services {
+        flex-direction: column;
+        margin: 0 15px 15px 15px;
+        font-size: large;
+        font-weight: 500;
+    }
+    .button {
+        flex-direction: column;
+    }
+    .b1 {
+        margin: 0 30px 30px 30px;
+        margin-top: -50px;
+        align-items: center;
+        width: 90px;
+        height: 40px;
+        font-size: 90%;
+        color: white;
+        background: #2A7C6F;
+        font-weight: 550;
+    }
+    .b2 {
+        margin: 0 30px 30px 30px;
+        align-items: center;
+        width: 90px;
+        height: 40px;
+        font-size: 90%;
+        color: white;
+        font-weight: 550;
+        background: #2A7C6F;
+    }
+       
+    .aboutme {
+        margin: 0 15px 15px 15px;
+    }
+    .aboutme h2{
+        font-size: larger;
+        font-weight: 500;
+    }
+    .aboutme p {
+        font-size: large;
+        font-weight: 500;
+    }
+    
+    .container {
+        margin: 15px;
+        grid-gap: 5px;
+    }
+    .gallery-item .image {
+        border-radius: 2px;
+    }
+    .gallery-item .image img {
+        object-position: 50% 50%;
+    }
+    .container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .w-2 {
+        grid-column: span 2;
+    }
+    .h-2 {
+        grid-row: span 2;
+    }
+    .container {
+        grid-auto-rows: 250px 300px;
+
+    }
+    .csection {
+        margin: 15px;
+    }
+    .hours p {
+        font-size: large;
+    }
+    .csection2 {
+        margin: 15px;
+        
+    }
+    .cf-btn {
+        width: 90px;
+        height: 40px;
+        font-size: 90%;
+        color: white;
+        background: #2A7C6F;
+        font-weight: 550;
+        transition: .5s;
+    }
+    .cf-text {
+        font-size: large;
+        height: 45px;
+    }
+    .cf-btn:hover{
+        background: #1d7567;
+    }
+    textarea .cf-text{
+        height: 60px;
+    }
+    .footer {
+        font-size: large;
+    }
+    .sorry {
+        font-size: 15px;
+        margin: 15px;
+        padding: unset;
+    }
+    .intro {
+        margin: 15px;
+    }
+    .intro-text {
+        font-size: larger;
+    }
+
+
+}
+@media screen and (max-width:770px) {
+    .presentation {
+        height: 50%;
+    }
+
+    .introduction {
+        margin: auto;
+        padding: unset;
+    }
+    .intro {
+        margin: 15px;
+        background-image: url(https://static.wixstatic.com/media/d03b04_0977842a150046088ab639869469a0ac~mv2.jpg);
+        background-size: cover;
+        height: 60vh;
+        font-size: larger;
+        margin: 10px;
+        width: 100%;
+        padding: 10px;
+        margin-top: 0;
+
+    }
+    .cover {
+        display: none;
+    }
+
+    .intro-text {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(4px);
+        width: 70%;
+        height: 45%;
+        border-radius: 5px;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .intro-text h1 {
+        font-size: x-large;
+        font-weight: 600;
+        margin: 5px;
+        padding: 25px;
+    }
+    .intro-text h2 {
+        font-size: 90%;
+        font-weight: 600;
+        padding: 25px;
+    }
+
+    .specialized {
+        font-size: x-large;
+        text-align: center;
+        font-weight: 500;
+    }
+    .services {
+        flex-direction: column;
+        margin: 0 15px 15px 35px;
+        font-size: large;
+        font-weight: 500;
+    }
+    .button {
+        flex-direction: row;
+    }
+    .b1 {
+        margin: 0 30px 30px 30px;
+        align-items: center;
+        width: 90px;
+        height: 40px;
+        font-size: 90%;
+        color: white;
+        background: #2A7C6F;
+        font-weight: 550;
+    }
+    .b2 {
+        margin: 0 30px 30px 30px;
+        align-items: center;
+        width: 90px;
+        height: 40px;
+        font-size: 90%;
+        color: white;
+        font-weight: 550;
+        background: #2A7C6F;
+    }
+       
+    .aboutme {
+        margin: 0 15px 15px 15px;
+    }
+    .aboutme h2{
+        font-size: larger;
+        font-weight: 500;
+    }
+    .aboutme p {
+        font-size: large;
+        font-weight: 500;
+    }
+    
+    .container {
+        margin: 15px;
+        grid-gap: 5px;
+    }
+    .gallery-item .image {
+        border-radius: 2px;
+    }
+    .gallery-item .image img {
+        object-position: 50% 50%;
+    }
+    .container {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .w-2 {
+        grid-column: span 2;
+    }
+    .h-2 {
+        grid-row: span 2;
+    }
+    .container {
+        grid-auto-rows: 250px 300px;
+
+    }
+    .csection {
+        margin: 15px;
+    }
+    .hours p {
+        font-size: large;
+    }
+    .csection2 {
+        margin: 15px;
+        
+    }
+    .cf-btn {
+        width: 90px;
+        height: 40px;
+        font-size: 90%;
+        color: white;
+        background: #2A7C6F;
+        font-weight: 550;
+        transition: .5s;
+    }
+    .cf-text {
+        font-size: large;
+        height: 45px;
+    }
+    .cf-btn:hover{
+        background: #1d7567;
+    }
+    textarea .cf-text{
+        height: 60px;
+    }
+    .footer {
+        font-size: large;
+    }
+    .sorry {
+        font-size: 15px;
+        margin: 15px;
+        padding: unset;
+    }
+    .intro {
+        margin: 15px;
+    }
+    .intro-text {
+        font-size: larger;
+    }
+
+
+}
+@media screen and (max-width:500px) {
+    .presentation {
+        height: 50%;
+    }
+
+    .introduction {
+        margin: auto;
+        padding: unset;
+    }
+    .intro {
+        margin: 15px;
+        background-image: url(https://static.wixstatic.com/media/d03b04_0977842a150046088ab639869469a0ac~mv2.jpg);
+        background-size: cover;
+        height: 60vh;
+        font-size: larger;
+        margin: 10px;
+        width: 100%;
+        padding: 10px;
+        margin-top: 0;
+
+    }
+    .cover {
+        display: none;
+    }
+
+    .intro-text {
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        width: 70%;
+        height: 45%;
+        border-radius: 5px;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .intro-text h1 {
+        font-size: x-large;
+        margin: 5px;
+        padding: 10px;
+    }
+    .intro-text h2 {
+        font-size: 90%;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    .specialized {
+        font-size: x-large;
+        text-align: center;
+        font-weight: 500;
+    }
+    .services {
+        flex-direction: column;
+        margin: 0 15px 15px 15px;
+        font-size: large;
+        font-weight: 500;
+    }
+    .button {
+        flex-direction: column;
+    }
+    .b1 {
+        margin: 0 30px 30px 30px;
+        margin-top: -50px;
+        align-items: center;
+        width: 90px;
+        height: 40px;
+        font-size: 90%;
+        color: white;
+        background: #2A7C6F;
+        font-weight: 550;
+    }
+    .b2 {
+        margin: 0 30px 30px 30px;
+        align-items: center;
+        width: 90px;
+        height: 40px;
+        font-size: 90%;
+        color: white;
+        font-weight: 550;
+        background: #2A7C6F;
+    }
+       
+    .aboutme {
+        margin: 0 15px 15px 15px;
+    }
+    .aboutme h2{
+        font-size: larger;
+        font-weight: 500;
+    }
+    .aboutme p {
+        font-size: large;
+        font-weight: 500;
+    }
+    
+    .container {
+        margin: 15px;
+        grid-gap: 5px;
+    }
+    .gallery-item .image {
+        border-radius: 2px;
+    }
+    .gallery-item .image img {
+        object-position: 50% 50%;
+    }
+    .container {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .w-2 {
+        grid-column: span 1;
+    }
+    .h-2 {
+        grid-row: span 1;
+    }
+    .container {
+        grid-auto-rows: 250px 300px;
+
+    }
+    .csection {
+        margin: 15px;
+    }
+    .hours p {
+        font-size: large;
+    }
+    .csection2 {
+        margin: 15px;
+        
+    }
+    .cf-btn {
+        width: 90px;
+        height: 40px;
+        font-size: 90%;
+        color: white;
+        background: #2A7C6F;
+        font-weight: 550;
+        transition: .5s;
+    }
+    .cf-text {
+        font-size: large;
+        height: 45px;
+    }
+    .cf-btn:hover{
+        background: #1d7567;
+    }
+    textarea .cf-text{
+        height: 60px;
+    }
+    .footer {
+        font-size: large;
+    }
+    .sorry {
+        font-size: 15px;
+        margin: 15px;
+        padding: unset;
+    }
+    .intro {
+        margin: 15px;
+    }
+    .intro-text {
+        font-size: larger;
+    }
+
 
 }
