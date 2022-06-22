@@ -1,0 +1,282 @@
+<?php
+
+$server = "localhost";
+$username = "root";
+$password = "";
+$database = "physio";
+
+$conn = mysqli_connect($server, $username, $password, $database);
+
+if ( isset($_POST['submitButton']))
+{
+    $fullname = $_POST['fullname'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $insertData = mysqli_query($conn, "INSERT INTO contact(fullname,email,subject,message)VALUES('$fullname', '$email', '$subject', '$subject')");
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <title>Sarah The Physiotherapist</title>
+ 
+</head>
+<body>
+  
+<nav>
+
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="logo-container">
+    <h4 class="logo">Sarah The Physiotherapist</h4>
+  </div>
+    <ul class="nav-links" id="menuList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bookonline.html">Book Online</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+</nav>
+    <section class="presentation">
+        <div class="intro">
+            <div class="intro-text">
+                <h1>DO YOU HAVE A NAGGING PAIN THAT WON'T GO AWAY???</h1>
+                <h2>Here's your chance to live pain free.</h2>
+            </div>
+            <div class="blur"></div>
+        </div>
+        <div class="cover">
+            <img src="./img/myofascial.webp" alt="Myofascial" class="cover">
+        </div>
+    </section>
+    <section class="servsec">
+        <p class="specialized">SPECIALIZED PHYSIOTHERAPIST IN...</p>
+        <br>
+        <br>
+        <div class="services">
+        <div class="serv1">
+            <div>Musculoskeletal Pain</div>
+            <br>
+            <div>Sports Injuries</div>
+            <br>
+            <div>Post Surgery Rehabilitation</div>
+            <br>
+            <div>Posture Education and Correction</div>
+            <br>
+            <div>Electrotherapy</div>
+        </div>
+        <div class="serv2">
+            <div>Arthritis Pain</div>
+            <br>
+            <div>Generalized Bodily Physical Assessment for Injury</div>
+            <br>
+            <div>Post Stroke Rehabilitation</div>
+            <br>
+            <div>Graded Exercise Therapy</div>
+            <br>
+            <div>Rehabilitation for Bed Ridden Patients</div>
+            <br>
+        </div>
+    </div>
+    <div class="button">
+        <a href="bookonline.html"><button class="b1">Book Now!</button></a>
+        <button class="b2">Call!</button>
+    </div>
+</section>
+<br>
+<br>
+    <section>
+        <div class="aboutme">
+            <h2>ABOUT ME...</h2>
+            <br>
+            <p class="par">Specialized Physiotherapist with 10 years experience, currently working at PolyCare, Lavington Mall. My goal as a physiotherapist is to restore your strength, mobility, function, and a new life—pain free. In all my working years, I have strived to be the caring hands you deserve and to be the place where you feel the change.</p>
+        </div>
+    </section>
+    <div class="container">
+    <div class="gallery-container w-2 h-2">
+        <div class="gallery-item">
+            <div class="image">
+                <img src="./img/img1.jpg" alt="physiotherapist">
+            </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img2.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img3.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+    <div class="gallery-container h-2">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img4.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img5.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+    <div class="gallery-container h-2">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img6.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img10.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img8.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+    <div class="gallery-container h-2">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img9.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img7.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+    <div class="gallery-container h-2">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img11.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img12.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+    <div class="gallery-container">
+        <div class="gallery-item">
+        <div class="image">
+            <img src="./img/img13.jpg" alt="physiotherapist">
+        </div>
+        <div class="text">Healing</div>
+    </div>
+    </div>
+
+
+</div>
+    <section class="csection">
+        <div class="hours">
+          <h2>Clinic Hours</h2>
+          <br>
+          <h3>We’re Here When You Need Us</h3>
+          <br>
+          <p>Monday-Friday : 8.00 am - 5.00 pm</p>
+          <p>Saturday : 8.00 - 12.00 pm</p>
+          <p>Sunday : Closed</p>
+        </div>
+        
+    </section>
+    <br>
+    <br>
+    <section class="csection2">
+        <div class="contactus">
+            <h2>CONTACT US</h2>
+            <br>
+            <p>+254 722 758 907</p>
+            <br>
+            <div class="middle">
+                <a class="sbtn" href="https://web.facebook.com/sarah.odongo.5">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="sbtn" href="https://www.instagram.com/sarahthemanualtherapist/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+       
+            <form action="index.php" class="contact-form" method="POST">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="text" name="fullname" class="cf-text" placeholder="Full Name" required>
+                <input type="text" name="email" class="cf-text" placeholder="E-mail Address" required>
+                <input type="text" name="subject" class="cf-text" placeholder="Subject">
+                <textarea class="cf-text" name="message" placeholder="Type your message..." required></textarea>
+                <button type="submit" class="btn btn-primary" name="submitButton">Submit</button>
+                <input type="hidden" name="_next" value="https://sarahthephysiotherapist.com/thankyou.html">
+            </form>
+    </section>
+        <br><br><br>
+         <footer class="footer">©2021 by SarahthePhysiotherapist. All rights reserved</footer>  
+ <br><br>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+ <script src="bootstrap-5.2.0/js/bootstrap.min.js"></script>
+ <script>
+     const hamburger = document.querySelector(".hamburger");
+     const navLinks = document.querySelector(".nav-links");
+     const links = document.querySelector(".nav-links li");
+
+     hamburger.addEventListener('click', () => {
+         navLinks.classList.toggle("open");
+     });
+ </script>
+
+    </body>
+</html>
