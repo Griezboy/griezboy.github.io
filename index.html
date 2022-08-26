@@ -1,26 +1,6 @@
-<?php
-
-$server = "localhost";
-$username = "root";
-$password = "";
-$database = "physio";
-
-$conn = mysqli_connect($server, $username, $password, $database);
-
-if ( isset($_POST['submitButton']))
-{
-    $fullname = $_POST['fullname'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-
-    $insertData = mysqli_query($conn, "INSERT INTO contact(fullname,email,subject,message)VALUES('$fullname', '$email', '$subject', '$subject')");
-}
-
-?>
 
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
